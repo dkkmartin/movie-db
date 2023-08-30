@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 60px;
+  padding-top: 5em;
+  font-family: 'Gill Sans', sans-serif;
+}
+
+span {
+  color: yellow;
+}
+
+body {
+  background-color: rgb(32, 32, 32);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+form {
+  padding-top: 5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+input {
+  width: 20%;
+  height: 50px;
+  font-size: 24px;
+  font-weight: 300;
+  padding-left: 0.2em;
+}
+
+input::placeholder {
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+button {
+  width: 50px;
+  border-radius: 0;
+  background-color: yellow;
+  border: none;
+  transition: transform 0.1s;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: 5px 2px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.movieBox {
+  font-family: 'Lucida Sans', sans-serif;
+  font-size: 20px;
+  padding-top: 5em;
+  width: 100%;
+}
+
+.grid__con {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  justify-items: center;
+  gap: 1em;
+  padding: 0 1em 1em 1em;
+}
+
+.movieDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 30px;
+  box-shadow: 1px 0 10px black;
+  padding: 1em 2em;
+  max-width: 600px;
+  max-height: 300px;
+  height: 100%;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.movieDetails:hover {
+  background-color: rgb(40, 40, 40);
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.movieSpecs {
+  display: flex;
+  gap: 2em;
+  padding: 0 3em;
+}
+
+.boldSpan {
+  font-weight: bold;
+}
